@@ -12,13 +12,16 @@
     
     <div class="div1">
         <div class="div2">
+
             <h1 class="TextBingo"> Bingo </h1>
-            <br>
-            <h1> O numero sorteado é: </h1>
-            <h2 id="numeroSorteado">--</h2>
+
+            <div class="numeroSorteado">
+                <h2 id="numeroSorteado">--</h2>
+            </div>
+
             <div class="Tabela">
                 <table>
-                    <tr>
+                    <tr id="bingo">
                         <th> B </th>
                         <th> I </th>
                         <th> N </th>
@@ -132,12 +135,13 @@
                     </tr>
                 </table>
             </div>
-
-
+            
+            <br>
 
             <button class="buttonSortear" onClick="sortearNovoNumero()">Sortear</button>
 
        </div>
+
 
     </div>
     
