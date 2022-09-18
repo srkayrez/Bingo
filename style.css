@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+
+.div1{
+    padding: 2rem;
+    background-color: rgb(131, 131, 255);
+}
+.div2{
+    padding: 2rem;
+    background-color: white;
+    border-radius: 2em;
+}
+.buttonSortear{
+    width: 100%;
+    background-color: rgb(131, 131, 255);
+    border-style: none;
+    border-radius: 2em;
+    padding : 1rem;
+    font-size: large;
+    color : white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(96, 96, 185);
+}
+
+#numeroSorteado{
+    justify-content: center;
+    text-align: center;
+    border-radius: 100%;
+    background-color: rgb(131, 131, 255);
+    width : 30px;
+    padding : 1em;
+    font-size : 30px;
+    color: white;
+    margin-left: 40%;
+}
+
+.TextBingo{
+    
+}
