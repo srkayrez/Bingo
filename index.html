@@ -13,10 +13,31 @@
     <div class="div1">
         <div class="div2">
 
+            <a href="#abrirModal">
+                <button class="buttonNovoJogo"> Novo jogo </button>
+            </a>
+
+            <div id="abrirModal" class="modal">
+                
+                <a href="#fechar" title="Fechar" class="fechar">
+                    <button onClick="buttonNovoJogo()" class="buttonModal">x</button>
+                </a>
+                
+
+                <h2>Novo jogo</h2>
+                <label id="labelNome">Digite o numero de jogadores</label>
+                <input type="number" id="numeroDeJogadores" placeholder="Numero de jogadores">
+                <button id="buttonIniciar" onClick="getNumeroDeJogadores()"> Iniciar </button>
+                
+                <br>
+                
+
+            </div>
+
             <h1 class="TextBingo"> Bingo </h1>
 
             <div class="numeroSorteado">
-                <h2 id="numeroSorteado">--</h2>
+                <h2 id="numeroSorteado">00</h2>
             </div>
 
             <div class="Tabela">
@@ -140,6 +161,12 @@
 
             <button class="buttonSortear" onClick="sortearNovoNumero()">Sortear</button>
 
+            <br>
+
+            <h2>Tabela jogadores</h2>
+            <div id="tabelaJogadores">
+
+            </div>
        </div>
 
 

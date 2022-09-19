@@ -7,11 +7,11 @@ body{
     background-color: rgb(131, 131, 255);
 }
 .div2{
-    padding: 2rem;
+    padding: 2%;
     background-color: white;
     border-radius: 2em;
 }
-.buttonSortear{
+.buttonSortear,.buttonNovoJogo{
     width: 100%;
     background-color: rgb(131, 131, 255);
     border-style: none;
@@ -37,26 +37,30 @@ button:hover{
     text-align: center;
     border-radius: 100%;
     background-color: rgb(131, 131, 255);
-    width : 30px;
+    width : 70px;
     padding : 1em;
     font-size : 30px;
     color: white;
 }
+.tabela{
+    justify-content: center;
+}
 
 table {
     width: 100%;
-text-align: center;
-justify-self: center;
+    text-align: center;
+    justify-self: center;
 }
 thead {
-background-color: #353535;
-font-weight: bold;
+    background-color: #353535;
+    font-weight: bold;
 }
 td , th {
-border: 1px solid #000000;
-padding: 5px 20px;
-font-family: 'Montserrat', sans-serif;
-font-weight: bold;
+    border: 1px solid #000000;
+    padding: 5px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color:#dbdbdb
 }
 
 #bingo{
@@ -66,4 +70,39 @@ font-weight: bold;
 
 h2,h1 {
     text-align: center;
+}
+
+.modal {
+    position: fixed;
+    width: 53%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255, 255, 255);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    border-radius: 20px;
+}
+
+.modal:target {
+opacity: 1;
+pointer-events: auto;
+}
+
+#abrirModal{
+padding:3em;
+}
+
+.buttonModal{
+border-style: none;
+border-radius: 100%;
+width: 40px;
+height: 40px;
+font-size: 25px;
+text-decoration: none;
+color: white;
+background: rgba(131, 131, 255);
+float:right;
 }
